@@ -1,0 +1,25 @@
+package arrayTrial;
+
+public class PointOEquilibrium {
+public static int findPOE(int[] arr){
+	if(arr==null || arr.length==0){
+		return 0;
+	}
+	int sumLeft=0;
+	int sumRight=0;
+	int c=0;
+	for(int j=arr.length-1;j>=0;j--){
+		sumRight=sumRight+arr[j];
+		c++;
+	}
+
+	//if()
+	return c;
+}
+	public static void main(String[] args) {
+		int[] test= {1, 8, 3, 7, 10, 2};
+		System.out.println(findPOE(test));
+
+	}
+
+}
